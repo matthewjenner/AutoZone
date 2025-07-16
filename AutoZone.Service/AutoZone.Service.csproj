@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+<ItemGroup>
+    <PackageReference Include="AutoMapper" Version="15.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.7" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\AutoZone.Data\AutoZone.Data.csproj" />
+    <ProjectReference Include="..\AutoZone.Domain\AutoZone.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

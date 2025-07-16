@@ -1,0 +1,86 @@
+# .NET build artifacts
+bin/
+obj/
+out/
+TestResults/
+*.user
+*.vspscc
+*.vssscc
+
+# Rider, VS, VS Code, JetBrains
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.cache
+*.ncb
+*.opendb
+
+# Build results
+build/
+dist/
+publish/
+
+# EF Core migrations snapshot
+Migrations/*Snapshot.cs
+
+# NuGet packages
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+.nuget/
+
+# Auto-generated files
+Generated_Code/
+wwwroot/dist/
+wwwroot/node_modules/
+node_modules/
+bower_components/
+
+# Log files
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Secret files
+secrets.json
+appsettings.Development.json
+
+# Blazor WASM artifacts
+**/wwwroot/
+**/publish/
+**/dist/
+**/node_modules/
+
+# Coverage
+coverage/
+*.coverage
+*.coveragexml
+
+# Database
+*.mdf
+*.ldf
+*.sqlite
+*.db
+
+# Others
+_ReSharper.Caches/
+*.swp
+*.swo
+
+# Dotnet tools
+/.dotnet/
+.dotnet_toolstest/
+
+# Snapshots and dumps
+*.dmp
+*.bak
+*.sql
+
+# EF Core tools artifacts
+.efconfig/

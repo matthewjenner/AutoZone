@@ -1,0 +1,42 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: AutoZone.Api/Dockerfile
+    ports:
+      - '7000:8080'
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=sql_server;Database=AutoZoneDb;User Id=sa;Password=Your_password123;TrustServerCertificate=true;
+      - ASPNETCORE_URLS=http://+:8080
+    depends_on:
+      - sql_server
+    networks:
+      - autozone-network
+
+  frontend:
+    build:
+      context: ./AutoZone.FrontEnd
+      dockerfile: Dockerfile
+    ports:
+      - '3000:80'
+    environment:
+      - VITE_API_URL=http://localhost:7000
+    depends_on:
+      - api
+    networks:
+      - autozone-network
+
+  sql_server:
+    image: mcr.microsoft.com/mssql/server:latest
+    environment:
+      SA_PASSWORD: 'Your_password123'
+      ACCEPT_EULA: 'Y'
+    ports:
+      - '1433:1433'
+    networks:
+      - autozone-network
+
+networks:
+  autozone-network:
+    driver: bridge

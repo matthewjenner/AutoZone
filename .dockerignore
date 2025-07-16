@@ -1,0 +1,45 @@
+# Frontend dependencies
+AutoZone.FrontEnd/node_modules/
+AutoZone.FrontEnd/dist/
+AutoZone.FrontEnd/.cache/
+AutoZone.FrontEnd/.parcel-cache/
+
+# Backend build outputs
+AutoZone.Api/bin/
+AutoZone.Api/obj/
+AutoZone.Data/bin/
+AutoZone.Data/obj/
+AutoZone.Service/bin/
+AutoZone.Service/obj/
+AutoZone.Domain/bin/
+AutoZone.Domain/obj/
+
+# Test projects
+AutoZone.Api.Tests/bin/
+AutoZone.Api.Tests/obj/
+AutoZone.Service.Tests/bin/
+AutoZone.Service.Tests/obj/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local 
